@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
+
+
+:root{
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+main{
+  display: flex;
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'Big Shoulders';
+  font-weight: 600;
+  font-size : 2rem;
+  color: #ffffff;
+}
+
+p {
+  font-family: 'Lexend Deca';
+  color: #ffffff;
+}
+
+button{
+  width: 8rem;
+  height: 2.8rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3rem;
+}
+
+.more-button:nth-child(1){
+  color: var(--Bright-orange);
+}
+button:nth-child(2){
+  color: var(--Dark-cyan);
+}
+button:nth-child(3){
+  color: var(--Bright-orange);
+}
+
+.container:nth-child(1){
+  background-color: var(--Bright-orange);
+}
+
+.container:nth-child(2){
+  background-color: var(--Dark-cyan);
+}
+
+.container:nth-child(3){
+  background-color: var(--Very-dark-cyan);
+}
+
