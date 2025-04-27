@@ -14,25 +14,30 @@
 }
 
 body {
-  min-height: 100vh;
+  min-width: 100vh;
   margin: 0;
 }
 
 main{
   display: flex;
-  height: 100vh;
+  height: 100vh; 
 }
 
 h1 {
   font-family: 'Big Shoulders';
   font-weight: 600;
-  font-size : 2rem;
+  font-size : 3rem;
   color: #ffffff;
 }
 
 p {
+  text-align: start;
   font-family: 'Lexend Deca';
   color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 2rem;
+  opacity: 0.8;
+    
 }
 
 button{
@@ -43,14 +48,19 @@ button{
   border-radius: 3rem;
 }
 
-.more-button:nth-child(1){
+.first-button{
   color: var(--Bright-orange);
 }
-button:nth-child(2){
+.second-button{
   color: var(--Dark-cyan);
 }
-button:nth-child(3){
-  color: var(--Bright-orange);
+.third-button{
+  color: var(--Very-dark-cyan);
+}
+
+
+.container {
+  padding: 4.5rem;
 }
 
 .container:nth-child(1){
