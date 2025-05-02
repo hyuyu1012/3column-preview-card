@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&display=swap');
-
 
 :root{
   --Bright-orange: hsl(31, 77%, 52%);
   --Dark-cyan: hsl(184, 100%, 22%);
   --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Transparent-white: hsla(0, 0%, 100%, 0.75) ; /* paragraph */
+  --Very-light-gray: hsl(0, 0%, 95%);
 }
 
 * {
@@ -14,13 +14,29 @@
 }
 
 body {
-  min-width: 100vh;
   margin: 0;
+  height : 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-light-gray);
 }
 
 main{
   display: flex;
-  height: 100vh; 
+  width:60rem;
+  height: 32rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 3rem;
+}
+
+img {
+  width: 4rem;
 }
 
 h1 {
@@ -28,39 +44,58 @@ h1 {
   font-weight: 600;
   font-size : 3rem;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 p {
   text-align: start;
   font-family: 'Lexend Deca';
-  color: #ffffff;
-  font-size: 1.1rem;
-  line-height: 2rem;
-  opacity: 0.8;
-    
+  color: var(--Transparent-white);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-top: 0;
+  
 }
 
 button{
-  width: 8rem;
-  height: 2.8rem;
+  margin-top: 4rem;
+  width: 9.1rem;
+  height: 2.9rem;
   background-color: #ffffff;
   border: none;
   border-radius: 3rem;
+  font-weight: 700;
 }
 
 .first-button{
   color: var(--Bright-orange);
 }
+
+.first-button:active{
+  color: #ffffff;
+  background-color: var(--Bright-orange);
+  border: 1.2px solid #ffffff;
+}
+
+
 .second-button{
   color: var(--Dark-cyan);
 }
-.third-button{
-  color: var(--Very-dark-cyan);
+.second-button:active {
+  color: #ffffff;
+  background-color: var(--Dark-cyan);
+  border: 1.2px solid #ffffff;
 }
 
 
-.container {
-  padding: 4.5rem;
+.third-button{
+  color: var(--Dark-cyan);
+}
+.third-button:active{
+  background-color: var(--Very-dark-cyan);
+  border: 1.2px solid #ffffff;
+  color: #ffffff;
+
 }
 
 .container:nth-child(1){
@@ -75,3 +110,10 @@ button{
   background-color: var(--Very-dark-cyan);
 }
 
+@media (max-width : 400px){
+  main{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
